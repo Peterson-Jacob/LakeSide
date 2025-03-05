@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+}
+
+body{
+    background-color: #ADD8E6;
+}
+
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: #F5F5F5;
+}
+
+header h1{
+    text-align: center;
+    color: darkblue;
+    padding-top: 15px;
+    font-weight: 700;
+    font-style: italic;
+    
+   
+}
+
+.hero{
+    position: relative;
+    background-image: url(images/lakeView.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.heroScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;   
+}
+
+.heroDiv{
+   position: relative; 
+   color: white;
+}
+
+
+
+.hero h2{
+    font-weight: 400;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+button{
+   background-color: #00008b;
+   color: white;
+   border: none;
+   padding: 20px 10px;
+   font-size: 16px; 
+   cursor: pointer;
+}
+
+button:hover{
+    background-color: #4B0082;
+    box-shadow: 5px 5px 10px black;
+}
+
+.topAboutSection, .areaAboutSection, .amenitiesSection{
+  display: flex;
+   
+}
+
+.topAbout, .areaAbout, .amenities{
+    position: relative;
+    background-color: #F5F5F5;
+    margin: 20px auto;
+}
+
+
+.testimonials{
+    position: relative;
+    background-color: #F5F5F5;    
+}
+
+.topAboutInfo, .areaAboutInfo, .amenitiesInfo{
+    position: relative;
+}
+
+.topAboutImg, .areaAboutImg, .amenitiesImg{
+    position: relative;
+}
+
+.topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .bookingDiv h2{
+    font-weight: 400;
+}
+
+.testimonials h2{
+    font-weight: 400;  
+}
+
+.areaAboutInfo li, .amenities li, .footerInfo li{
+    list-style-type: none;
+   }
+   
+.footerInfo li{
+    display: inline;
+}
+
+img{
+   box-shadow: 3px 3px 6px black; 
+}
+
+#lakeCabin{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    z-index: 1;
+ }
+
+ #canoe{
+     position: absolute;
+     bottom: 0;
+     left: 0;    
+ }
+
+
+#bedroom, #boating{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+#bathroom, #skiing{
+    position: absolute;
+    top: 33%;
+    right: 0;
+    z-index: 1;
+}
+
+#masterBed, #fishing{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.message{
+    background-color: #ADD8E6;
+    text-align: center;
+    box-shadow: 3px 3px 6px black; 
+    
+}
+
+.commentSection{
+    display: flex;
+}
+
+.bookingSection{
+    position: relative;
+    background-image: url(images/eveningLake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    
+}
+
+
+.footerSection{
+    background-color: #ADD8E6;
+    color: black;
+    width: 100%;
+    padding-bottom: 20px;
+   }
+
+.footerInfo i{
+    color: #00008b;
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+
+    header h1{
+        font-size: 36px;
+    }
+
+    .hero, .heroScreen{
+        height: 600px;
+    }
+
+    .heroDiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+
+    .hero h2{
+        font-size: 36px;
+        padding-top: 50px;  
+    }
+
+    .hero p{
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    
+    .hero button, .bookingDiv button{
+        margin: 25px auto;
+        width: 50%;
+    }
+
+    .topAboutSection, .amenitiesSection{
+       flex-direction: column; 
+    }
+
+    .topAboutImg{
+        width: 340px;
+        height: 435px;
+        margin: 30px auto;   
+    }
+
+    .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
+        width: 90%;
+        margin: 10px auto;
+        
+    }
+
+    .topAboutInfo p, .areaAboutInfo p, .amenities p, .bookingDiv p{
+        font-size: 18px;
+        margin: 10px auto;
+    }
+
+    .testimonials p{
+        font-size: 15px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        
+    }
+
+    #tmHeading{
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .bookingDiv h2{
+        font-size: 32px;
+        
+    }
+
+    .testimonials h2{
+        font-size: 32px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .topAboutInfo button, .areaAboutInfo button, .amenities button{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .areaAboutSection{
+        flex-direction:column-reverse;
+    }
+
+   .areaAboutInfo li, .amenities li{
+    font-size: 16px;
+    margin: 10px auto;
+    
+   } 
+
+   .areaAboutImg, .amenitiesImg{
+    width: 340px;
+    height: 700px;
+    margin: 30px auto;
+   }
+
+   .commentSection{
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 25px;
+   }
+
+   .message{
+    margin: 20px auto;
+    padding: 10px 0;
+   }
+
+   .message h3{
+    font-size: 20px;
+    font-weight: 700;
+   }
+
+   .bookingSection{
+    height: 400px;
+   }
+
+   .bookingDiv{
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 0px;    
+   }
+
+   .footerInfo{
+        width: 90%;
+        margin: 0px auto;
+   }
+
+   .footerInfo h2{
+    font-size: 28px;
+    padding: 10px 0px;
+   }
+
+   .footerInfo p{
+    font-size: 14px;
+   }
+
+   .footerInfo ul{
+        width: 80%;
+        margin: 10px auto;
+   }
+
+   .footerInfo li{
+        padding: 0px 15px;
+   }
+
+   .footerInfo i{
+        font-size: 28px;
+   }
+  
+}
+
+@media only screen and (min-width: 601px) {
+   
+    img{
+        width: 300px;
+        height: 300px;
+    }
+   
+    header h1{
+        font-size: 40px;
+    }
+
+    .hero, .heroScreen{
+        height: 650px;
+    }
+
+    .heroDiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+
+    .hero h2{
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .hero p{
+        font-size: 20px;
+        padding: 25px 0;
+    }
+    
+    .hero button, .bookingDiv button{
+        margin: 25px auto;
+        width: 250px;
+    }
+
+    .topAboutSection, .amenitiesSection{
+       flex-direction: column; 
+    }
+
+    .topAboutImg{
+        width: 425px;
+        height: 525px;
+        margin: 33px auto;   
+    }
+
+    .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
+        width: 90%;
+        margin: 34px auto;
+        
+    }
+
+    .topAboutInfo p, .areaAboutInfo p, .amenities p, .bookingDiv p{
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    .testimonials p{
+        font-size: 16px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        
+    }
+
+    #tmHeading{
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .bookingDiv h2{
+        font-size: 36px;   
+    }
+
+    .testimonials h2{
+        font-size: 36px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .topAboutInfo button, .areaAboutInfo button, .amenities button{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .areaAboutSection{
+        flex-direction:column-reverse;
+    }
+
+   .areaAboutInfo li, .amenities li{
+    font-size: 18px;
+    margin: 10px auto;
+    
+   } 
+
+   .areaAboutImg, .amenitiesImg{
+    width: 425px;
+    height: 825px;
+    margin: 40px auto;
+   }
+
+   .commentSection{
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 25px;
+   }
+
+   .message{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px 0;
+   }
+
+   .message h3{
+    font-size: 22px;
+    font-weight: 700;
+   }
+
+   .bookingSection{
+    height: 425px;
+   }
+
+   .bookingDiv{
+        width: 90%;
+        margin: 0px auto;
+        padding: 20px 0px;    
+   }
+
+   .footerInfo{
+        width: 90%;
+        margin: 0px auto;
+   }
+
+   .footerInfo h2{
+    font-size: 32px;
+    text-align: center;
+    padding: 15px 0px;
+   }
+
+   .footerInfo p{
+    font-size: 16px;
+    text-align: center;
+   }
+
+   .footerInfo ul{
+        width: 425px;
+        margin: 25px auto;
+   }
+
+   .footerInfo li{
+        padding: 0px 25px;
+   }
+
+   .footerInfo i{
+        font-size: 32px;
+   }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+
+    .hero, .heroScreen{
+        height: 700px;
+    }
+
+    .heroDiv{
+        max-width: 80%;
+        margin: 0px auto;
+    }
+
+    .topAboutSection, .amenitiesSection, .areaAboutSection, .commentSection{
+        flex-direction: row; 
+     }
+
+
+    .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
+        width: 40%;
+        margin: 50px auto;
+        
+    }
+
+    .topAboutImg{
+        margin: 100px auto 0px auto;   
+    }
+
+    .areaAboutImg, .amenitiesImg{
+        margin: 75px auto;
+    }
+
+    .message{
+        width: 275px;
+        margin: 40px auto;
+        padding: 10px 5px;
+    }
+
+    .bookingSection{
+        height: 450px;
+    }
+
+    .bookingDiv{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  
+    .hero, .heroScreen{
+        height: 750px;
+    }
+
+    .heroDiv{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .hero h2{
+        font-size: 52px;
+        padding-top: 100px;
+    }
+
+    .hero p{
+        font-size: 26px;
+        padding: 50px 0;
+    }
+
+    .topAboutSection, .areaAboutSection, .amenitiesSection, .commentSection{
+        max-width: 1600px;
+        margin: 0px auto;
+    }
+
+    .topAboutImg{
+        margin: 75px auto;   
+    }
+
+    .areaAboutImg, .amenitiesImg{
+        margin: 100px auto;
+    }
+
+    .topAboutInfo{
+        margin: 75px auto;   
+    }
+
+    .areaAboutInfo, .amenitiesInfo{
+        margin: 125px auto;
+    }
+
+    .testimonialsInfo{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .testimonials h2{
+
+        margin: 10px auto;
+    }
+
+    #tmHeading{  
+    
+        padding: 50px 0px 10px 0px;
+    }
+
+    .message{
+        width: 325px;
+    
+    }
+
+    .bookingSection{
+        height: 500px;
+    }
+
+    .bookingDiv{
+        max-width: 1600px;
+        padding-top: 75px;
+    }
+
+    .footerInfo h2{
+        padding: 25px 0px;
+    }
+    
+    
+    .footerInfo ul{
+        margin: 50px auto;
+    }
+}
