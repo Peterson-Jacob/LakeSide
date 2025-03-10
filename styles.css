@@ -35,6 +35,7 @@ header h1{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    margin: 20px auto 0px auto;
 }
 
 .heroScreen{
@@ -69,7 +70,7 @@ button{
 }
 
 button:hover{
-    background-color: #4B0082;
+    background-color: #004B00;
     box-shadow: 5px 5px 10px black;
 }
 
@@ -78,10 +79,21 @@ button:hover{
    
 }
 
-.topAbout, .areaAbout, .amenities{
+.topAbout{
     position: relative;
     background-color: #F5F5F5;
-    margin: 20px auto;
+    margin: 0px auto 25px auto;
+}
+
+.areaAbout, .amenities{
+    position: relative;
+    background-color: #ADD8E6;
+    margin: 25px auto;
+}
+
+.areaAboutInfo, .amenitiesInfo{
+    background-color: #F5F5F5;
+    padding: 20px;
 }
 
 
@@ -103,7 +115,12 @@ button:hover{
 }
 
 .testimonials h2{
-    font-weight: 400;  
+    font-weight: 400;
+    text-align: center;  
+}
+
+#tmHeading{
+    text-align: center;
 }
 
 .areaAboutInfo li, .amenities li, .footerInfo li{
@@ -177,7 +194,7 @@ img{
 
 
 .footerSection{
-    background-color: #ADD8E6;
+    background-color: #F5F5F5;
     color: black;
     width: 100%;
     padding-bottom: 20px;
@@ -232,7 +249,7 @@ img{
     .topAboutImg{
         width: 340px;
         height: 435px;
-        margin: 30px auto;   
+        margin: 50px auto;   
     }
 
     .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
@@ -260,9 +277,12 @@ img{
         padding: 10px 0;
     }
 
-    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .bookingDiv h2{
-        font-size: 32px;
-        
+    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2{
+        font-size: 32px;    
+    }
+
+    .bookingDiv h2{
+        font-size: 36px;
     }
 
     .testimonials h2{
@@ -365,13 +385,14 @@ img{
 
     .heroDiv{
         width: 90%;
-        margin: 0px auto;
+        margin: 0px auto;    
     }
     
 
     .hero h2{
         font-size: 40px;
-        padding-top: 50px;
+        padding-top: 75px;
+       
     }
 
     .hero p{
@@ -401,7 +422,7 @@ img{
     }
 
     .topAboutInfo p, .areaAboutInfo p, .amenities p, .bookingDiv p{
-        font-size: 20px;
+        font-size: 18px;
         margin: 20px auto;
     }
 
@@ -419,14 +440,12 @@ img{
         padding: 10px 0;
     }
 
-    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .bookingDiv h2{
+    .topAboutInfo h2, .areaAboutInfo h2, .amenities h2, .testimonials h2{
         font-size: 36px;   
     }
 
-    .testimonials h2{
-        font-size: 36px;
-        width: 90%;
-        margin: 0 auto;
+    .bookingDiv h2{
+        font-size: 40px;
     }
 
     .topAboutInfo button, .areaAboutInfo button, .amenities button{
@@ -519,6 +538,13 @@ img{
     .heroDiv{
         max-width: 80%;
         margin: 0px auto;
+        padding-top: 25px;
+        
+    }
+
+    .hero h2{
+        font-size: 46px;
+       
     }
 
     .topAboutSection, .amenitiesSection, .areaAboutSection, .commentSection{
@@ -526,11 +552,23 @@ img{
      }
 
 
-    .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
-        width: 40%;
-        margin: 50px auto;
+    .topAboutInfo{
+        width: 450px;
+        margin: 75px auto;
+    
         
     }
+
+    .areaAboutInfo, .amenitiesInfo{
+        width: 450px;
+        margin: 100px auto;
+        
+    }
+
+    .bookingDiv p{
+        margin: 25px auto;
+    }
+
 
     .topAboutImg{
         margin: 100px auto 0px auto;   
@@ -552,24 +590,33 @@ img{
 
     .bookingDiv{
         width: 80%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .bookingDiv h2{
+        font-size: 46px;
     }
 
 }
 
 @media only screen and (min-width: 1400px) {
+
+ 
   
     .hero, .heroScreen{
         height: 750px;
     }
 
     .heroDiv{
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 0 auto;
+      
     }
 
     .hero h2{
         font-size: 52px;
-        padding-top: 100px;
+        
     }
 
     .hero p{
@@ -591,11 +638,20 @@ img{
     }
 
     .topAboutInfo{
+        width: 600px;
         margin: 75px auto;   
     }
 
-    .areaAboutInfo, .amenitiesInfo{
+    .areaAboutInfo{
+        width: 600px;
+        margin: 150px auto;
+        height: 700px;
+    }
+
+    .amenitiesInfo{
+        width: 600px;
         margin: 125px auto;
+        height: 750px;
     }
 
     .testimonialsInfo{
@@ -618,10 +674,6 @@ img{
     
     }
 
-    .bookingSection{
-        height: 500px;
-    }
-
     .bookingDiv{
         max-width: 1600px;
         padding-top: 75px;
@@ -636,3 +688,4 @@ img{
         margin: 50px auto;
     }
 }
+
