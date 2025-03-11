@@ -49,3 +49,16 @@ let topAboutTL = gsap.timeline({
   amenitiesTL.from('#boating', {opacity: 0, duration: 1});
   amenitiesTL.from('#skiing', {opacity: 0, duration: 1});
   amenitiesTL.from('#fishing', {opacity: 0, duration: 1});
+
+  let testimonialsTL = gsap.timeline({
+    scrollTrigger:{
+      trigger: '.testimonials',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: false,
+      markers: false,
+      toggleActions: 'play complete'
+    }
+  })
+
+  testimonialsTL.from('.message', {opacity: 0, x: "random(-100, 100)", stagger: 0.5});
