@@ -99,7 +99,8 @@ button:hover{
 
 .testimonials{
     position: relative;
-    background-color: #F5F5F5;    
+    background-color: #F5F5F5;
+    overflow: hidden;  
 }
 
 .topAboutInfo, .areaAboutInfo, .amenitiesInfo{
