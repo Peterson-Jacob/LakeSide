@@ -357,10 +357,11 @@ img{
    .footerInfo ul{
         width: 80%;
         margin: 10px auto;
+        
    }
 
    .footerInfo li{
-        padding: 0px 15px;
+        padding: 0px 10px;
    }
 
    .footerInfo i{
